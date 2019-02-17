@@ -42,3 +42,26 @@ ArrayGetKeyIndex(array, keyToFindIndex)
             return i
     return -1
 }
+
+/*
+Given arrays, to be continued..
+*/
+;readCSVtoArrays
+/*
+Loop, read, %A_ScriptDir%\%dataFileName%.%dataExtension%
+{
+    LineNumber = %A_Index%
+    Loop, parse, A_LoopReadLine, ";"
+    {
+        if LineNumber = 1
+            Break
+        LineNumberOffset := LineNumber-1
+        if A_Index = 1
+            sendKeys[LineNumberOffset] := A_LoopField
+        if A_Index = 2
+            descriptions[LineNumberOffset] := A_LoopField
+        if A_Index = 3
+            values[LineNumberOffset] := A_LoopField
+    }
+}
+*/
